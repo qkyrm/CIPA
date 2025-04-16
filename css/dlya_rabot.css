@@ -1,0 +1,66 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    color: #222;
+  }
+  
+  .date-box {
+    float: left;
+    width: 60px;
+    text-align: center;
+    margin-right: 20px;
+  }
+  
+  .date-box .day {
+    font-size: 20px;
+    font-weight: bold;
+    background: #eee;
+    padding: 10px;
+    color: #333;
+  }
+  
+  .date-box .month {
+    background: #3b5998;
+    color: #fff;
+    padding: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  
+  h1 {
+    font-size: 26px;
+    margin-top: 0;
+  }
+  
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .red {
+    color: #c0392b;
+  }
+  
+  ul {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .email {
+    font-weight: bold;
+    color: #3b5998;
+  }
+  
+  .views {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  

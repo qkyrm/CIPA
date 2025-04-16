@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Для соискателей</title>
+  <link rel="stylesheet" href="css/dlya_sois.css">
+</head>
+<body>
+
+  <h1>Вакансии для соискателей</h1>
+
+  <!-- Вакансия 1 -->
+  <div class="job">
+    <div class="date-box">
+      <div class="day">01</div>
+      <div class="month">апр</div>
+    </div>
+    <div class="job-content">
+      <h3>Требуется финансовый директор в ОсОО «Айта Групп»</h3>
+      <div class="views">👁 Просмотров: 34</div>
+      <button class="btn" onclick="toggleDetails(this)">Подробнее…</button>
+
+      <div class="details">
+        <p><strong>ОсОО «Айта Групп»</strong> на рынке Кыргызстана более 5 лет. Энергично развивающаяся компания в швейной отрасли, поставляющая продукцию на Wildberries и Ozon. Сейчас открыта вакансия финансового директора.</p>
+
+        <p class="section-title">Что вы получите, работая у нас:</p>
+        <ul>
+          <li>Оклад + KPI</li>
+          <li>Опыт в динамичной компании</li>
+          <li>Поддержка руководства</li>
+          <li>Дружный коллектив</li>
+        </ul>
+
+        <p class="section-title">Мы предлагаем:</p>
+        <ul>
+          <li>Самореализация и рост</li>
+          <li>Работа в швейной отрасли</li>
+          <li>Комфортное рабочее место</li>
+          <li>Конкурентная зарплата</li>
+        </ul>
+
+        <p class="section-title">Ваши обязанности:</p>
+        <ul>
+          <li>Финансовая отчётность: Баланс, P&L, Cashflow</li>
+          <li>ABC-анализ, бюджетирование</li>
+          <li>Автоматизация 1С</li>
+          <li>Разработка KPI, финансовый анализ</li>
+        </ul>
+
+        <p class="section-title">Требования:</p>
+        <ul>
+          <li>Опыт в должности фин. директора от 3 лет</li>
+          <li>Знание Excel, 1С, МоегоСклада</li>
+          <li>Аналитическое мышление</li>
+        </ul>
+
+        <p class="section-title">Условия:</p>
+        <ul>
+          <li>Офис в с. Лебединовка</li>
+          <li>График: Пн–Пт, с 09:00 до 18:00</li>
+          <li>Выходные: вс, пн</li>
+        </ul>
+
+        <p><strong>Контакты:</strong> 0557115540 Елена, 0706676365 Адинай</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Вакансия 2 -->
+  <div class="job">
+    <div class="date-box">
+      <div class="day">04</div>
+      <div class="month">мар</div>
+    </div>
+    <div class="job-content">
+      <h3>Требуется "Бухгалтер-консультант" в ИТ-проект по бухучету</h3>
+      <div class="views">👁 Просмотров: 45</div>
+      <button class="btn" onclick="toggleDetails(this)">Подробнее…</button>
+      <div class="details"><p>Описание временно недоступно.</p></div>
+    </div>
+  </div>
+
+  <!-- Вакансия 3 -->
+  <div class="job">
+    <div class="date-box">
+      <div class="day">17</div>
+      <div class="month">фев</div>
+    </div>
+    <div class="job-content">
+      <h3>Требуется Менеджер по МСФО</h3>
+      <div class="views">👁 Просмотров: 71</div>
+      <button class="btn" onclick="toggleDetails(this)">Подробнее…</button>
+      <div class="details"><p>Описание временно недоступно.</p></div>
+    </div>
+  </div>
+
+  <!-- Пагинация -->
+  <div class="pagination">
+    <a href="#" class="arrow">❮</a>
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">7</a>
+    <a href="#">8</a>
+    <a href="#">9</a>
+    <span class="dots">...</span>
+    <a href="#">26</a>
+    <a href="#" class="arrow">❯</a>
+  </div>
+
+  <script>
+    function toggleDetails(button) {
+      const details = button.parentElement.querySelector(".details");
+      const isOpen = details.style.display === "block";
+
+      document.querySelectorAll(".details").forEach(d => d.style.display = "none");
+      document.querySelectorAll(".btn").forEach(b => b.textContent = "Подробнее…");
+
+      if (!isOpen) {
+        details.style.display = "block";
+        button.textContent = "Скрыть";
+      }
+    }
+  </script>
+
+</body>
+</html>

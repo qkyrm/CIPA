@@ -1,0 +1,132 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(180deg, #0f2e51 0%, #1b3f63 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .login-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .back-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #3366cc;
+  }
+  
+  .logo img {
+    height: 55px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  form {
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4461d7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #354db4;
+  }
+  
+  .privacy-text {
+    margin: 15px 0;
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+  }
+  
+  .privacy-text a {
+    color: #3366cc;
+    text-decoration: underline;
+  }
+  
+  .google-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+  }
+  
+  .google-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .google-login:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .register-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .register-link a {
+    color: #3366cc;
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  

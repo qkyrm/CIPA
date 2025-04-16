@@ -1,11 +1,395 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ИПБА КР</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/image2.png" alt="Логотип ИПБА" />
+    </div>
+  
+    <ul class="nav-links"> 
+      <li class="dropdown">
+        <a href="#">О нас ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="organization.html">Наша организация</a></li>
+          <li><a href="documents.html">Документы</a></li>
+          <li><a href="organy.html">Органы управления</a></li>
+          <li><a href="reestr.html">Реестр</a></li>
+          <li><a href="#">Партнеры</a></li>
+        </ul>
+      </li>
     
+      <li class="dropdown">
+        <a href="#">Курсы ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Финансовый учет</a></li>
+          <li><a href="#">Управленческий учет 1</a></li>
+          <li><a href="#">Налоги</a></li>
+          <li><a href="#">Право</a></li>
+          <li><a href="#">Финансовый учет 2</a></li>
+          <li><a href="#">Управленческий учет 2</a></li>
+          <li><a href="#">Финансовый менеджмент</a></li>
+          <li><a href="#">Аудит</a></li>
+        </ul>
+      </li>
+    
+      <li class="dropdown">
+        <a href="#">Сертификация ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="#">CIPAEN в КР</a></li>
+          <li><a href="#">Сертификация CIPA</a></li>
+          <li><a href="#">Сертификация CPA Eurasia</a></li>
+          <li><a href="#">Проверить сертификат</a></li>
+        </ul>
+      </li>
+    
+      <li class="dropdown">
+        <a href="#">Обучение ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Обучение</a></li>
+          <li><a href="#">Excel курсы</a></li>
+          <li><a href="#">Онлайн курсы и семинары</a></li>
+          <li><a href="#">Банковский учет 1 и 2</a></li>
+          <li><a href="#">Семинары</a></li>
+          <li><a href="#">Консультации</a></li>
+          <li><a href="#">Преподаватели</a></li>
+          <li><a href="#">Аттестация</a></li>
+          <li><a href="#">Программы курсов</a></li>
+        </ul>
+      </li>
+    
+      <li class="dropdown">
+        <a href="#">База знаний ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Библиотека</a></li>
+          <li><a href="#">МСФО</a></li>
+          <li><a href="#">Законодательная база</a></li>
+        </ul>
+      </li>
+    
+      <li class="dropdown">
+        <a href="#">Вакансии ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Для работодателей</a></li>
+          <li><a href="#">Для соискателей</a></li>
+        </ul>
+      </li>
+    </ul>
+  
+    <div class="right-panel">
+      <div class="localization-search">
+        <button class="lang">РУ</button>
+        <button class="lang">KG</button>
+        <input type="text" placeholder="Поиск..." />
+        <button class="search-btn">Найти</button>
+      </div>
+      <button class="login-btn">Войти</button>
+    </div>
+  </nav>  
+
+    <header class="header">
+        <img src="images/image1.jpg" alt="Фон" class="background-image">
+    
+        <div class="slider-overlay"></div>
+        <div class="slider-container">
+          <button class="arrow left" onclick="prevPhrase()">&#8592;</button>
+          <p id="slider-phrase">Сертифицируем</p>
+          <button class="arrow right" onclick="nextPhrase()">&#8594;</button>
+        </div>
+      </header>      
+
+      <section class="cert-block">
+        <div class="cert-text">
+          <strong>ИПБА КР</strong> - член международной Региональной группы профессиональных
+          объединений (ассоциаций) бухгалтеров и аудиторов государств – участников СНГ
+        </div>
+        <a href="#" class="cert-btn">Узнать о сертификации</a>
+      </section>
+      
+
+      <div class="course-grid">
+        <div class="course-card">
+          <h3>Финансовый учёт</h3>
+          <span class="chip violet">Бухгалтерия</span>
+        </div>
+      
+        <div class="course-card orange">
+          <h3>Управленческий учёт 1</h3>
+          <span class="chip white">Финансы</span>
+          <span class="chip white">Анализ</span>
+        </div>
+      
+        <div class="course-card green">
+          <h3>Налоги</h3>
+          <span class="chip green">НДС</span>
+          <span class="chip green">Подоходный налог</span>
+        </div>
+      
+        <div class="course-card">
+          <h3>Право</h3>
+          <span class="chip violet">Юриспруденция</span>
+          <span class="chip violet">Трудовое право</span>
+        </div>
+      
+        <div class="course-card">
+          <h3>Финансовый учёт 2</h3>
+          <span class="chip violet">Продвинутый</span>
+        </div>
+      
+        <div class="course-card orange">
+          <h3>Управленческий учёт 2</h3>
+          <span class="chip white">Бюджетирование</span>
+          <span class="chip white">Контроль</span>
+        </div>
+      
+        <div class="course-card">
+          <h3>Финансовый менеджмент</h3>
+          <span class="chip blue">Капитал</span>
+          <span class="chip blue">Инвестиции</span>
+        </div>
+      
+        <div class="course-card">
+          <h3>Аудит</h3>
+          <span class="chip red">Внутренний</span>
+          <span class="chip red">Внешний</span>
+        </div>
+      
+        <div class="course-card">
+          <h3>Excel курсы</h3>
+          <span class="chip blue">Формулы</span>
+          <span class="chip blue">Таблицы</span>
+          <span class="chip blue">Дашборды</span>
+        </div>
+      
+      </div>
+
+      
+      <div class="container">
+        <h1>О проекте Uchet.kg</h1>
+        <div class="info">
+          <img src="images/image3.jpg" alt="Онлайн обучение">
+          <div class="info-text">
+            <h2>Онлайн обучение</h2>
+            <p>На платформе uchet.kg вы можете найти огромное количество обучающих материалов, курсов и полезных статей, которые помогут вам прокачать свои знания в области бухгалтерского учета, налогообложения и финансов.</p>
+          </div>
+        </div>
+    
+        <div class="info">
+          <img src="images/image4.webp" alt="Опытные преподаватели">
+          <div class="info-text">
+            <h2>Опытные преподаватели</h2>
+            <p>Наши курсы созданы опытными специалистами, которые делятся только актуальными и проверенными знаниями.</p>
+          </div>
+        </div>
+    
+        <div class="info">
+          <img src="images/image5.webp" alt="Сертификат">
+          <div class="info-text">
+            <h2>Сертификаты</h2>
+            <p>После прохождения обучения вы получите сертификат, подтверждающий приобретённые знания и компетенции.</p>
+          </div>
+        </div>
+    
+        <p style="text-align:center;">
+          <a class="btn" href="#courses">Просмотреть курсы</a>
+        </p>
+      </div>
+
+      <div class="article-container">
+        <h1>Как вести бухгалтерский учет онлайн?</h1>
+        <div class="meta">Опубликовано: 14 апреля 2025 | Автор: Команда Uchet.kg</div>
+    
+        <img src="https://uchet.kg/upload/iblock/abc/bukhgalterskiy-uchet-online.jpg" alt="Статья о бухгалтерском учете">
+    
+        <div class="content">
+          <p>
+            Онлайн-бухгалтерия становится всё более востребованным направлением. Это удобно, быстро и доступно в любое время и в любом месте.
+          </p>
+    
+          <blockquote>
+            Онлайн-сервисы позволяют вести учет без привязки к рабочему месту и обеспечивают круглосуточный доступ к вашим данным.
+          </blockquote>
+    
+          <p>
+            Для старта вам достаточно зарегистрироваться на специальной платформе, такой как uchet.kg, и выбрать подходящий курс обучения или сервис для ведения учёта. Не забудьте внимательно изучить условия работы платформы и возможности для интеграции с другими системами, такими как 1С, облачные хранилища и CRM-системы.
+          </p>
+    
+          <p>
+            Использование облачных решений существенно упрощает процессы учета и экономит ваше время.
+          </p>
+        </div>
+    
+        <div class="tags">
+          <span>#бухгалтерия</span>
+          <span>#онлайн</span>
+          <span>#обучение</span>
+        </div>
+      </div>
+
+      <div class="news-container">
+        <h2 class="news-title">Новости компании</h2>
+      
+        <div class="news-slider" id="newsSlider">
+          <!-- Первый слайд -->
+          <div class="news-slide">
+            <div class="news-card">
+              <img src="images/image6.png" alt="Новость 1">
+              <div class="news-card-content">
+                <h3>Старт нового курса по бухгалтерии</h3>
+                <p>Открыт набор на интенсивный курс по финансовому учёту.</p>
+              </div>
+            </div>
+            <div class="news-card">
+              <img src="images/image7.jpg" alt="Новость 2">
+              <div class="news-card-content">
+                <h3>Вебинар по налогообложению</h3>
+                <p>Приглашаем на бесплатный вебинар по актуальным вопросам налогов.</p>
+              </div>
+            </div>
+            <div class="news-card">
+              <img src="images/image8.webp" alt="Новость 3">
+              <div class="news-card-content">
+                <h3>Обновление программы Excel</h3>
+                <p>Добавлены новые темы в программу курса Excel для финансистов.</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Второй слайд -->
+          <div class="news-slide">
+            <div class="news-card">
+              <img src="https://uchet.kg/upload/iblock/92d/photo_2022_12.jpg" alt="Новость 4">
+              <div class="news-card-content">
+                <h3>Скидка на курс аудита</h3>
+                <p>До конца месяца действует скидка 20% на курс внутреннего аудита.</p>
+              </div>
+            </div>
+            <div class="news-card">
+              <img src="https://uchet.kg/upload/iblock/043/vebinar.jpg" alt="Новость 5">
+              <div class="news-card-content">
+                <h3>Открытая лекция по финанализу</h3>
+                <p>Лекция от лучших экспертов по управленческому анализу.</p>
+              </div>
+            </div>
+            <div class="news-card">
+              <img src="https://uchet.kg/upload/iblock/d86/sovet.jpg" alt="Новость 6">
+              <div class="news-card-content">
+                <h3>Запуск нового направления</h3>
+                <p>Начинаем подготовку специалистов в области международных стандартов отчётности.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Точки-навигация -->
+<div class="dots partners-dots">
+  <span class="partners-dot active" onclick="showPartnerSlide(0)"></span>
+  <span class="partners-dot" onclick="showPartnerSlide(1)"></span>
+</div>
+      </div>
+
+      <div class="partners-container">
+        <h2 class="partners-title">Сертифицируем по программе CIPA</h2>
+        <p class="partners-subtitle"><b>Успех</b> ИПБА КР - Ваш карьерный рост!</p>
+        <p style="color: #535353;">Наши партнеры:</p>
+      
+        <div class="partners-slider">
+          <div class="partners-slide">
+            <img src="images/cpark.png" alt="CPARK">
+            <img src="images/obf.png" alt="OBF">
+            <img src="images/pro_kg.png" alt="ProKG">
+            <img src="images/cpa.png" alt="CPA Eurasia">
+            <img src="images/cipa.png" alt="CIPA">
+            <img src="images/pipart.png" alt="PIPA AArt">
+      
+            <!-- Повторяю логотипы, чтобы прокрутка была плавной и бесконечной -->
+            <img src="images/cpark.png" alt="CPARK">
+            <img src="images/obf.png" alt="OBF">
+            <img src="images/pro_kg.png" alt="ProKG">
+            <img src="images/cpa.png" alt="CPA Eurasia">
+            <img src="images/cipa.png" alt="CIPA">
+            <img src="images/pipart.png" alt="PIPA AArt">
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h4>Компания</h4>
+            <ul>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Вакансии</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Курсы</h4>
+            <ul>
+              <li><a href="#">Бухгалтерия</a></li>
+              <li><a href="#">Финансовый учет</a></li>
+              <li><a href="#">Управленческий учет</a></li>
+              <li><a href="#">Налоги и право</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Режим работы</h4>
+            <p>Понедельник - Пятница 9.00 до 18.00</p>
+            <p>Суббота и Воскресенье - выходной</p>
+            
+          </div>
+          <div class="footer-section">
+            <h4>Контакты</h4>
+            <p>г. Бишкек, бизнес центр Дордой Плаза (ул. Ибраимова 115), 3 этаж, северное крыло</p>
+            <p><a href="tel:+996312298498">+996 312 29 84 98</a></p>
+            <p><a href="tel:+996555500182">+996 555 500 182</a></p>
+            <p><a href="mailto:ipba@uchet.kg">ipba@uchet.kg</a></p>
+            
+            <div class="social-icons">
+              <a href="https://www.facebook.com/uchet.kg/"><img src="images/facebook.png" alt="Facebook"></a>
+              <a href="https://www.instagram.com/uchet.kg/"><img src="images/insta.webp" alt="Instagram"></a>
+              <a href="https://www.linkedin.com/onboarding/start/profile-location/new/"><img src="images/linkedin.png" alt="LinkedIN"></a>
+              <a href="https://x.com/uchetkg"><img src="images/twitter.png" alt="Twitter"></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 Uchet.kg. Все права защищены.</p>
+        </div>
+      </footer>
+      
+
+      <script>
+        // Слайдер новостей
+        let currentNewsSlide = 0;
+        const newsSlider = document.getElementById('newsSlider');
+        const newsDots = document.querySelectorAll('.news-dot');
+      
+        function showNewsSlide(index) {
+          currentNewsSlide = index;
+          newsSlider.style.transform = 'translateX(' + (-index * 100) + '%)';
+      
+          newsDots.forEach((dot, idx) => {
+            dot.classList.toggle('active', idx === index);
+          });
+        }
+      
+        showNewsSlide(0);
+      
+        // Слайдер партнёров
+        
+      </script>
+      
+      
+  <script src="script.js"></script>
 </body>
 </html>
+

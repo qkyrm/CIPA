@@ -94,8 +94,6 @@
   </nav>  
 
     <header class="header">
-        <img src="images/image1.jpg" alt="Фон" class="background-image">
-    
         <div class="slider-overlay"></div>
         <div class="slider-container">
           <button class="arrow left" onclick="prevPhrase()">&#8592;</button>
@@ -113,6 +111,7 @@
       </section>
       
 
+      <div class="courses-section">
       <div class="course-grid">
         <div class="course-card">
           <h3>Финансовый учёт</h3>
@@ -166,9 +165,9 @@
           <span class="chip blue">Таблицы</span>
           <span class="chip blue">Дашборды</span>
         </div>
-      
       </div>
 
+    </div>
       
       <div class="container">
         <h1>О проекте Uchet.kg</h1>
@@ -189,7 +188,7 @@
         </div>
     
         <div class="info">
-          <img src="images/image5.webp" alt="Сертификат">
+          <img src="images/certifikat.jpg" alt="Сертификат">
           <div class="info-text">
             <h2>Сертификаты</h2>
             <p>После прохождения обучения вы получите сертификат, подтверждающий приобретённые знания и компетенции.</p>
@@ -201,11 +200,13 @@
         </p>
       </div>
 
+      <div class="second-section">
+
       <div class="article-container">
         <h1>Как вести бухгалтерский учет онлайн?</h1>
         <div class="meta">Опубликовано: 14 апреля 2025 | Автор: Команда Uchet.kg</div>
     
-        <img src="https://uchet.kg/upload/iblock/abc/bukhgalterskiy-uchet-online.jpg" alt="Статья о бухгалтерском учете">
+        <img src="images/image10.png" alt="Статья о бухгалтерском учете">
     
         <div class="content">
           <p>
@@ -264,21 +265,21 @@
           <!-- Второй слайд -->
           <div class="news-slide">
             <div class="news-card">
-              <img src="https://uchet.kg/upload/iblock/92d/photo_2022_12.jpg" alt="Новость 4">
+              <img src="images/skidki.jpg" alt="Новость 4">
               <div class="news-card-content">
                 <h3>Скидка на курс аудита</h3>
                 <p>До конца месяца действует скидка 20% на курс внутреннего аудита.</p>
               </div>
             </div>
             <div class="news-card">
-              <img src="https://uchet.kg/upload/iblock/043/vebinar.jpg" alt="Новость 5">
+              <img src="images/lektiya.jpg" alt="Новость 5">
               <div class="news-card-content">
                 <h3>Открытая лекция по финанализу</h3>
                 <p>Лекция от лучших экспертов по управленческому анализу.</p>
               </div>
             </div>
             <div class="news-card">
-              <img src="https://uchet.kg/upload/iblock/d86/sovet.jpg" alt="Новость 6">
+              <img src="images/napravlenie.jpg" alt="Новость 6">
               <div class="news-card-content">
                 <h3>Запуск нового направления</h3>
                 <p>Начинаем подготовку специалистов в области международных стандартов отчётности.</p>
@@ -292,7 +293,8 @@
   <span class="partners-dot active" onclick="showPartnerSlide(0)"></span>
   <span class="partners-dot" onclick="showPartnerSlide(1)"></span>
 </div>
-      </div>
+</div>
+    </div>
 
       <div class="partners-container">
         <h2 class="partners-title">Сертифицируем по программе CIPA</h2>
@@ -365,6 +367,17 @@
           <p>&copy; 2025 Uchet.kg. Все права защищены.</p>
         </div>
       </footer>
+      
+      <script>
+        window.addEventListener('scroll', function () {
+          const navbar = document.querySelector('.navbar');
+          if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+          } else {
+            navbar.classList.remove('scrolled');
+          }
+        });
+      </script>
       
 
       <script>

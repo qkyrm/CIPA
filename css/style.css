@@ -437,7 +437,7 @@ a:hover {
   border-radius: 16px;
   padding: 30px;
   color: white;
-  min-height: 180px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   position: relative;

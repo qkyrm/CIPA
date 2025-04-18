@@ -1,79 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #fff;
-    margin: 0;
-    padding: 30px;
-  }
-  
-  .document {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    border-bottom: 1px solid #ccc;
-    padding: 20px 0;
-  }
-  
-  .date-box {
-    background: #f3f3f3;
-    border: 1px solid #ddd;
-    text-align: center;
-    margin-right: 20px;
-    border-radius: 6px;
-    font-weight: bold;
-    color: #1f1f1f;
-  }
-  
-  .date-box .day {
-    font-size: 20px;
-    background: #2f3367;
-    color: #fff;
-    padding: 5px 10px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-  }
-  
-  .date-box .month {
-    padding: 5px 10px;
-    font-size: 13px;
-    text-transform: uppercase;
-    background: #f3f3f3;
-  }
-  
-  .content {
-    flex-grow: 1;
-  }
-  
-  .content h3 {
-    margin: 0 0 8px;
-    font-size: 20px;
-    color: #2b2b5f;
-  }
-  
-  .content a {
-    color: #3c3c7e;
-    font-size: 14px;
-    text-decoration: none;
-  }
-  
-  .meta {
-    font-size: 14px;
-    color: gray;
-    margin-top: 8px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .meta i {
-    margin-right: 5px;
-  }
-  
-  .show-btn {
-    background: #3b5998;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  
+  font-family: 'Poppins', sans-serif;
+  background: #1b3f63;
+  margin: 0;
+  padding: 50px 20px;
+  color: #f0f0f0;
+}
+
+.document {
+  display: grid;
+  grid-template-columns: 80px 1fr 120px;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.document:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.document::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #ffc857, #ff6b6b);
+}
+
+.date-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0f2340;
+  height: 100%;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+}
+
+.date-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 200, 87, 0.1);
+  transform: skewX(-15deg);
+}
+
+.date-box .day {
+  font-size: 28px;
+  color: #ffc857;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.date-box .month {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  padding: 20px;
+  position: relative;
+}
+
+.content h3 {
+  margin: 0 0 15px;
+  font-size: 20px;
+  color: #ffc857;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.content h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: rgba(255, 200, 87, 0.5);
+}
+
+.content a {
+  color: #a0cfff;
+  font-size: 15px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-weight: 300;
+}
+
+.content a:hover {
+  color: #ffc857;
+  text-decoration: underline;
+}
+
+.meta {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+}
+
+.meta i {
+  margin-right: 8px;
+  color: #ffc857;
+}
+
+.show-btn {
+  background: transparent;
+  color: #ffc857;
+  border: 2px solid #ffc857;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.show-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #ffc857;
+  transition: all 0.3s ease;
+  z-index: 0;
+}
+
+.show-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.show-btn:hover {
+  color: #0f2340;
+}
+
+.show-btn:hover::before {
+  left: 0;
+}

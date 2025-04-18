@@ -63,7 +63,6 @@ a:hover {
 .logo img {
   height: 60px;
   padding: 6px;
-  border: 2px solid white; /* белая рамка */
   border-radius: 12px; /* скругление рамки */
   background-color: rgba(255, 255, 255, 0.1); /* лёгкий белый фон */
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.3); /* свечение */
@@ -430,6 +429,30 @@ a:hover {
   max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
+}
+
+.courses-title {
+  text-align: center;
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.courses-title::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #5fc8f8, #3c8fc9);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
 }
 
 /* Base card styles */
